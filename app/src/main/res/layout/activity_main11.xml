@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exportar "
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#93A5D1"
+        android:textAlignment="center"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="#FFF"
+                    android:elevation="4dp"
+                    android:src="@drawable/consultar_conductor_100" />
+
+                <Button
+                    android:id="@+id/btnExpTodosConductores"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="TABLA/TODOS CONDUCTORES"
+                    android:textSize="15sp"
+                    android:backgroundTint="#93A5D1"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="2"
+                android:backgroundTint="#FFF"
+                android:elevation="4dp"
+                android:src="@drawable/consultar_vehiculos_100" />
+
+            <Button
+                android:id="@+id/btnExpTodosVehiculos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="TABLA/TODOS VEHICULOS"
+                android:textSize="15sp"
+                android:backgroundTint="#93A5D1"
+                android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="2"
+                android:backgroundTint="#FFF"
+                android:elevation="4dp"
+                android:src="@drawable/conductor_100" />
+
+            <Button
+                android:id="@+id/btnExpConductorVehiculo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SELECT:\nCONDUCTOR -> VEHICULO"
+                android:textSize="15sp"
+                android:backgroundTint="#93A5D1"
+                android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="2"
+                android:backgroundTint="#FFF"
+                android:elevation="4dp"
+                android:src="@drawable/consultar_conductor_100" />
+
+            <Button
+                android:id="@+id/btnExpLicenciaVencida"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SELECT:\nCONDUCTORES CON\nLICENCIA VENCIDA"
+                android:textSize="15sp"
+                android:backgroundTint="#93A5D1"
+                android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="2"
+                android:backgroundTint="#FFF"
+                android:elevation="4dp"
+                android:src="@drawable/conductor_100" />
+
+            <Button
+                android:id="@+id/btnExpConductoresSinVehiculos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SELECT:\nCONDUCTORES SIN VEHICULOS"
+                android:textSize="15sp"
+                android:backgroundTint="#93A5D1"
+                android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/campoNYearExport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="N CANTIDAD DE AÑOS"
+                    android:inputType="number" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="2"
+                android:backgroundTint="#FFF"
+                android:elevation="4dp"
+                android:src="@drawable/vehiculo_100" />
+
+            <Button
+                android:id="@+id/btnExpVehiculosNYearsUso"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SELECT:\nVEHICULOS CON N\nAÑOS DE USO"
+                android:textSize="15sp"
+                android:backgroundTint="#93A5D1"
+                android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

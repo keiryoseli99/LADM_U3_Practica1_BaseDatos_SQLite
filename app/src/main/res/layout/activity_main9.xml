@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultas Vehículos"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#93A5D1"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnTodosLosVehiculos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TODOS LOS VEHICULOS"
+        android:textSize="15sp"
+        android:backgroundTint="#93A5D1"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/campoNYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="N CANTIDAD DE AÑOS"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnVehiculoConNYearDeUso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VEHICULOS CON N AÑOS DE USO"
+        android:textSize="15sp"
+        android:backgroundTint="#93A5D1"/>
+
+    <ListView
+        android:id="@+id/listaConsultasVehiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

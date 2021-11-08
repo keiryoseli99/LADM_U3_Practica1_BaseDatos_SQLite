@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Conductor"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#93A5D1"
+        android:textAlignment="center"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/actualizarNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="NOMBRE"/>
+
+    <EditText
+        android:id="@+id/actualizarDomicilio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="DOMICILIO"/>
+
+    <EditText
+        android:id="@+id/actualizarNoLicencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="NO. LICENCIA"/>
+
+    <EditText
+        android:id="@+id/actualizarVence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="VENCIMIENTO DE LICENCIA: YYYY-MM-DD"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="0dp"
+        android:padding="0dp">
+
+        <Button
+            android:id="@+id/btnRegresarConductor"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="REGRESAR"
+            android:textSize="20sp"
+            android:backgroundTint="#93A5D1"
+            android:layout_marginVertical="10dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/btnActualizarConductor"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="ACTUALIZAR"
+            android:textSize="20sp"
+            android:backgroundTint="#93A5D1"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

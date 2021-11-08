@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultas Conductor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#93A5D1"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnTodosLosConductores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TODOS LOS CONDUCTORES"
+        android:textSize="15sp"
+        android:backgroundTint="#93A5D1"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="0dp"
+        android:padding="0dp">
+
+        <Button
+            android:id="@+id/btnLicenciaVencida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CONDUCTORES CON LICENCIA VENCIDA"
+            android:textSize="15sp"
+            android:backgroundTint="#93A5D1"
+            android:layout_marginVertical="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/btnConductoresSinVehiculos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CONDUCTORES SIN VEHICULOS"
+            android:textSize="15sp"
+            android:backgroundTint="#93A5D1"
+            android:layout_marginVertical="5dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegresarConsultasConductor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGRESAR"
+        android:textSize="15sp"
+        android:backgroundTint="#93A5D1"/>
+
+    <ListView
+        android:id="@+id/listaConsultasConductor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
